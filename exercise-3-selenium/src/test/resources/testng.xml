@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Exercise3-SeleniumSuite">
+    <test name="QubikContactFormTest">
+        <classes>
+            <class name="com.qubika.tests.ContactFormTest"/>
+        </classes>
+    </test>
+</suite>
