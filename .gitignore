@@ -1,61 +1,7 @@
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Test results and reports
-test-results/
-**/test-results/
-**/playwright-report/
-
-# Playwright
-node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-
-# Exercise 2 - Playwright
-exercise-2-playwright/node_modules/
-exercise-2-playwright/test-results/
-exercise-2-playwright/playwright-report/
-exercise-2-playwright/blob-report/
-exercise-2-playwright/playwright/.cache/
-
-# Exercise 3 - Selenium/Maven
-exercise-3-selenium/target/
-exercise-3-selenium/.mvn/
-exercise-3-selenium/mvnw
-exercise-3-selenium/mvnw.cmd
-exercise-3-selenium/reports/
-exercise-3-selenium/screenshots/
-
-# Temporary files
-tmp/
-temp/
-
-# Build outputs
-dist/
-build/
-out/
+target/
+.mvn/
+mvnw
+mvnw.cmd
+reports/
+screenshots/
+.DS_Store 

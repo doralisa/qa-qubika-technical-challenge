@@ -2,10 +2,6 @@
 
 End-to-end automation for Qubika Sports Club Management System.
 
-## Overview
-
-This solution implements E2E testing combining API and UI automation for the complete user journey from account creation to category management.
-
 ## Test Environment
 
 - **Application**: https://club-administration.qa.qubika.com/#/auth/login
@@ -14,13 +10,8 @@ This solution implements E2E testing combining API and UI automation for the com
 ## Setup & Run
 
 ```bash
-# Install dependencies
 npm install
-
-# Run tests
 npx playwright test --headed
-
-# View report
 npx playwright show-report
 ```
 
@@ -42,15 +33,28 @@ config/
 
 ## Test Flow
 
-1. **API Setup**: Create test user via API
-2. **UI Login**: Authenticate with created user
-3. **Category Management**: Create and validate categories
-4. **Cleanup**: Remove test user (API)
+1. API Setup: Create test user via API
+2. UI Login: Authenticate with created user
+3. Category Management: Create and validate categories
+4. Cleanup: Remove test user (API)
 
 ## Features
 
 - TypeScript implementation
 - Page Object Pattern
 - API integration for test data
-- data-testid locator strategy
-- Structured test reporting with test.step() 
+- CSS selector strategy
+- Structured test reporting with test.step()
+
+## Technical Notes
+
+**Locator Strategy**: Used CSS selectors and semantic locators due to absence of data-testid attributes in the application.
+
+**API Limitations**: User creation works but no DELETE endpoint available for cleanup.
+
+## Improvements for Production
+
+1. **data-testid Implementation**: Add data-testid attributes to key elements
+2. **User Cleanup Endpoint**: Implement DELETE `/api/users/{email}` endpoint
+3. **Environment Configuration**: Add support for multiple test environments
+4. **Parallel Execution**: Configure tests for parallel execution across browsers 
