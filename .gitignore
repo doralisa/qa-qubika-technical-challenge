@@ -24,6 +24,11 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# Test results and reports
+test-results/
+**/test-results/
+**/playwright-report/
+
 # Playwright
 node_modules/
 /test-results/
