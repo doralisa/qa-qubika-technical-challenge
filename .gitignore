@@ -1,0 +1,15 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Environment variables (sensitive data)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
