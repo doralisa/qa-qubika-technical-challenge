@@ -40,7 +40,7 @@ test.describe('Qubika Sports Club E2E Tests', () => {
       await categoriesPage.navigateToCategories();
     });
 
-    const categoryName = TEST_CATEGORY_DATA.categoryName();
+      const categoryName = TEST_CATEGORY_DATA.categoryName();
     const subcategoryName = TEST_CATEGORY_DATA.subcategoryName();
 
     await test.step('Create and verify category', async () => {
